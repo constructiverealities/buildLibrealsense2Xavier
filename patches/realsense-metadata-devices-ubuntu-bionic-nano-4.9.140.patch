@@ -1,7 +1,8 @@
-diff --git a/drivers/media/usb/uvc/uvc_driver.c b/drivers/media/usb/uvc/uvc_driver.c
---- a/drivers/media/usb/uvc/uvc_driver.c
+diff --git a/drivers/media/usb/uvc/uvc_driver.c.orig b/drivers/media/usb/uvc/uvc_driver.c
+index a98c85e..163b9b1 100644
+--- a/drivers/media/usb/uvc/uvc_driver.c.orig
 +++ b/drivers/media/usb/uvc/uvc_driver.c
-@@ -2770,186 +2770,6 @@
+@@ -2770,6 +2770,186 @@ static struct usb_device_id uvc_ids[] = {
  	  .bInterfaceSubClass	= 1,
  	  .bInterfaceProtocol	= 0,
  	  .driver_info		= UVC_QUIRK_FORCE_Y8 },
