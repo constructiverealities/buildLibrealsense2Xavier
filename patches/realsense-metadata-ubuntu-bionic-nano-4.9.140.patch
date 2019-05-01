@@ -1,4 +1,4 @@
-diff --git a/drivers/media/usb/uvc/uvc_driver.c.orig b/drivers/media/usb/uvc/uvc_driver.c
+diff --git a/drivers/media/usb/uvc/uvc_driver.c b/drivers/media/usb/uvc/uvc_driver.c
 index a98c85e..163b9b1 100644
 --- a/drivers/media/usb/uvc/uvc_driver.c.orig
 +++ b/drivers/media/usb/uvc/uvc_driver.c
@@ -227,23 +227,14 @@ index ae516e4ea0ff..a6970dda8fa4 100644
  
  		stream->bulk.header_size = 0;
 diff --git a/drivers/media/usb/uvc/uvcvideo.h b/drivers/media/usb/uvc/uvcvideo.h
-index 426fb245125a..e81e9cd53295 100644
+index 62aec3a..54f9aa1 100644
 --- a/drivers/media/usb/uvc/uvcvideo.h
 +++ b/drivers/media/usb/uvc/uvcvideo.h
-@@ -201,7 +201,7 @@
- /* Maximum number of packets per URB. */
- #define UVC_MAX_PACKETS		32
- /* Maximum status buffer size in bytes of interrupt URB. */
--#define UVC_MAX_STATUS_SIZE	16
-+#define UVC_MAX_STATUS_SIZE	32
- 
- #define UVC_CTRL_CONTROL_TIMEOUT	500
- #define UVC_CTRL_STREAMING_TIMEOUT	5000
 @@ -222,6 +222,7 @@
- #define UVC_QUIRK_RESTRICT_FRAME_RATE	0x00000200
- #define UVC_QUIRK_RESTORE_CTRLS_ON_INIT	0x00000400
- #define UVC_QUIRK_FORCE_Y8		0x00000800
-+#define UVC_QUIRK_APPEND_UVC_HEADER	0x00001000
- 
+ #define UVC_QUIRK_RESTRICT_FRAME_RATE  0x00000200
+ #define UVC_QUIRK_RESTORE_CTRLS_ON_INIT        0x00000400
+ #define UVC_QUIRK_FORCE_Y8             0x00000800
++#define UVC_QUIRK_APPEND_UVC_HEADER    0x00001000
+ #define UVC_QUIRK_DISABLE_AUTOSUSPEND  0x00001000
+
  /* Format flags */
- #define UVC_FMT_FLAG_COMPRESSED		0x00000001
