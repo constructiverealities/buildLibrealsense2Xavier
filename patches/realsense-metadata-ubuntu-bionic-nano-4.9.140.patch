@@ -227,14 +227,13 @@ index ae516e4ea0ff..a6970dda8fa4 100644
  
  		stream->bulk.header_size = 0;
 diff --git a/drivers/media/usb/uvc/uvcvideo.h b/drivers/media/usb/uvc/uvcvideo.h
-index 31f9f91..5dd0ddc 100644
 --- a/drivers/media/usb/uvc/uvcvideo.h
 +++ b/drivers/media/usb/uvc/uvcvideo.h
 @@ -222,6 +222,7 @@
- #define UVC_QUIRK_RESTRICT_FRAME_RATE  0x00000200
- #define UVC_QUIRK_RESTORE_CTRLS_ON_INIT        0x00000400
- #define UVC_QUIRK_FORCE_Y8             0x00000800
-+#define UVC_QUIRK_APPEND_UVC_HEADER    0x00001000
- #define UVC_QUIRK_DISABLE_AUTOSUSPEND  0x00001000
-
+ #define UVC_QUIRK_RESTRICT_FRAME_RATE	0x00000200
+ #define UVC_QUIRK_RESTORE_CTRLS_ON_INIT	0x00000400
+ #define UVC_QUIRK_FORCE_Y8		0x00000800
++#define UVC_QUIRK_APPEND_UVC_HEADER	0x00001000
+ #define UVC_QUIRK_DISABLE_AUTOSUSPEND	0x00001000
+ 
  /* Format flags */
