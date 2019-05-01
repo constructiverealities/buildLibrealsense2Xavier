@@ -31,9 +31,9 @@ cd /usr/src/kernel/kernel-4.9
 echo -e "\e[32mApplying Realsense-camera-formats patch\e[0m"
 patch -p1 < ${INSTALL_DIR}/patches/realsense-camera-formats_ubuntu-bionic-Xavier-4.9.108.patch
 
-echo -e "\e[32mApplying realsense-metadata patch [Jetson NANO]\e[0m"
-patch -p1 < ${INSTALL_DIR}/patches/realsense-metadata-devices-ubuntu-bionic-nano-4.9.140.patch
-patch -p1 < ${INSTALL_DIR}/patches/realsense-metadata-other-ubuntu-bionic-nano-4.9.140.patch
+echo -e "\e[32mApplying realsense-metadata patch (devices) [Jetson NANO]\e[0m"
+patch -p1 < ${INSTALL_DIR}/patches/realsense-metadata-ubuntu-bionic-nano-4.9.140.patch
+
 
 #Disabled for nano-testing.
 #echo -e "\e[32mApplying realsense-metadata patch\e[0m"
