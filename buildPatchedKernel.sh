@@ -4,8 +4,7 @@
 # MIT License
 
 LIBREALSENSE_DIRECTORY=${HOME}/librealsense
-LIBREALSENSE_VERSION=v2.17.1
-
+LIBREALSENSE_VERSION=v2.21.0
 
 function usage
 {
@@ -126,15 +125,15 @@ fi
 cd $INSTALL_DIR
 # Get the kernel sources; does not open up editor on .config file
 echo "${green}Getting Kernel sources${reset}"
-#sudo ./scripts/getKernelSourcesNoGUI.sh
+sudo ./scripts/getKernelSourcesNoGUI.sh
 
 echo "${green}Patching and configuring kernel${reset}"
-#sudo ./scripts/configureKernel.sh
-#sudo ./scripts/patchKernel.sh
+sudo ./scripts/configureKernel.sh
+sudo ./scripts/patchKernel.sh
 
 # Make the new Image and build the modules
 echo "${green}Building Kernel and Modules then installing Modules${reset}"
-sudo ./scripts/makeKernel.sh
+#sudo ./scripts/makeKernel.sh
 
 # The user still needs to flash the new kernel ...
 echo "${green}Please flash the new kernel Image file on to the Jetson.${reset}"

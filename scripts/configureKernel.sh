@@ -11,7 +11,7 @@ echo "Current working directory: "$PWD
 KERNEL_VERSION=$(uname -r)
 # For L4T 31.1.0 the kernel is 4.9.108-tegra ; everything after that is the local version
 # This removes the suffix
-LOCAL_VERSION=${KERNEL_VERSION#$"4.9.140"}
+LOCAL_VERSION=${KERNEL_VERSION#$"4.9.140"}	
 
 # On L4T 31.1.0 Kernel 4.9, Industrial I/O support is enabled
 # This was not true on earlier versions 
