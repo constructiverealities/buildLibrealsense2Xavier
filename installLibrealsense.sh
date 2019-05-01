@@ -4,12 +4,12 @@
 # MIT License
 
 LIBREALSENSE_DIRECTORY=${HOME}/librealsense
-LIBREALSENSE_VERSION=v2.17.1
+LIBREALSENSE_VERSION=v2.21.0
 INSTALL_DIR=$PWD
 
 
 function usage
-{
+{ 
     echo "usage: ./installLibrealsense.sh [[-c ] | [-h]]"
     echo "-n | --no_cmake   Do not build CMake 3.11"
     echo "-h | --help  This message"
