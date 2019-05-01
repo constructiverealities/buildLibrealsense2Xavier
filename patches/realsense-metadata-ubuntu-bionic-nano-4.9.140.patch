@@ -227,7 +227,7 @@ index ae516e4ea0ff..a6970dda8fa4 100644
  
  		stream->bulk.header_size = 0;
 diff --git a/drivers/media/usb/uvc/uvcvideo.h b/drivers/media/usb/uvc/uvcvideo.h
-index 62aec3a..54f9aa1 100644
+index 31f9f91..5dd0ddc 100644
 --- a/drivers/media/usb/uvc/uvcvideo.h
 +++ b/drivers/media/usb/uvc/uvcvideo.h
 @@ -222,6 +222,7 @@
